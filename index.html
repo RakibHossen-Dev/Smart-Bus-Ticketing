@@ -30,6 +30,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
     <script>
       tailwind.config = {
@@ -45,7 +49,7 @@
               buttonColor: "rgba(29,209,0,0.15)",
             },
             fontFamily: {
-              Raleway: "Raleway", // Correct the spelling here
+              Raleway: "Raleway",
               Inter: "Inter",
             },
           },
@@ -55,5 +59,148 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="font-Raleway">
+    <header class="w-11/12 mx-auto my-10">
+      <nav class="flex justify-between items-center mb-10">
+        <div>
+          <h4 class="text-2xl lg:text-4xl font-bold">P-Ticket</h4>
+        </div>
+        <div class="lg:block hidden relative lg:static" id="nav_menu">
+          <ul
+            class="bg-[#1dd100] z-10 p-5 lg:p-0 lg:bg-transparent absolute top-10 -right-20 lg:static flex lg:flex-row flex-col justify-center items-center gap-7"
+          >
+            <li><a class="text-lg font-medium" href="#">Home</a></li>
+            <li><a class="text-lg font-medium" href="#">About</a></li>
+            <li><a class="text-lg font-medium" href="#">Destination </a></li>
+            <li><a class="text-lg font-medium" href="#">Search </a></li>
+          </ul>
+        </div>
+
+        <div class="flex gap-3">
+          <div
+            class="flex justify-center items-center gap-1 bg-green-100 p-2 rounded-lg"
+          >
+            <p class="text-md lg:text-xl font-bold text-[#1dd100]">Bus</p>
+            <img src="images/bus-icon.png" alt="" />
+          </div>
+
+          <div id="hamber_icon" class="lg:hidden">
+            <i
+              class="fa-solid fa-bars bg-[#1dd100] text-white cursor-pointer p-3 font-bold rounded-lg"
+            ></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner setion start -->
+      <div
+        class="hero lg:min-h-screen rounded-3xl h-[500px] relative"
+        style="background-image: url(images/banner.png)"
+      >
+        <div class="hero-overlay bg-opacity-30"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <!-- <div class="max-w-md"> -->
+          <div class="w-11/12 lg:w-8/12">
+            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+            <span class="text-[#1dd100] text-5xl font-bold">P Paribahan</span>
+            <p class="mb-5 mt-5">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1dd100] border-none px-8 text-lg">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+        <!-- card start -->
+        <div
+          class="flex lg:flex-row flex-col justify-center items-center gap-5 absolute lg:-bottom-14 -bottom-96"
+        >
+          <div
+            class="flex justify-center items-center gap-3 bg-white border-b-2 border-[#1dd100] py-4 px-8 rounded-xl"
+          >
+            <div>
+              <img src="images/people.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold">500K+</h3>
+              <p class="text-lg text-gray-600">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-3 bg-white border-b-2 border-[#1dd100] py-4 px-8 rounded-xl"
+          >
+            <div>
+              <img src="images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold">1.7 lacks</h3>
+              <p class="text-lg text-gray-600">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-3 bg-white border-b-2 border-[#1dd100] py-4 px-8 rounded-xl"
+          >
+            <div>
+              <img src="images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold">80K+</h3>
+              <p class="text-lg text-gray-600">Rental partners</p>
+            </div>
+          </div>
+        </div>
+        <!-- card end -->
+      </div>
+      <!-- banner setion end -->
+    </header>
+
+    <!-- Best Offer Section  start -->
+    <section class="w-11/12 mx-auto my-28">
+      <h3 class="text-4xl font-bold text-center mb-10">Best offers for you</h3>
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div class="bg-[#ffbf0f] flex rounded-2xl">
+          <div class="p-5 flex flex-col items-center justify-center">
+            <h3 class="text-4xl font-bold mb-2">15% OFF</h3>
+            <p class="text-xl text-gray-700 text-center">
+              on your next purchase use by January 2024
+            </p>
+          </div>
+          <img src="images/cupon-devider.png" alt="" />
+          <div
+            class="p-5 text-center flex flex-col items-center justify-center"
+          >
+            <h3 class="text-xl font-semibold">NEW15</h3>
+            <p lass="text-gray-700">Coupon Code</p>
+          </div>
+        </div>
+
+        <div class="bg-[#f78c9c] flex rounded-2xl">
+          <div class="p-5 flex flex-col items-center justify-center">
+            <h3 class="text-4xl font-bold mb-2">20% OFF</h3>
+            <p class="text-xl text-gray-700 text-center">
+              on your next purchase use by January 2024
+            </p>
+          </div>
+          <img src="images/cupon-devider.png" alt="" />
+          <div
+            class="p-5 text-center flex flex-col items-center justify-center"
+          >
+            <h3 class="text-xl font-semibold">Couple 20</h3>
+            <p class="text-gray-700">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-16">
+        <button
+          class="py-3 px-10 text-[#1dd100] border border-dashed rounded-2xl border-[#1dd100]"
+        >
+          See All
+        </button>
+      </div>
+    </section>
+    <!-- Best Offer Section  end -->
+
+    <script src="scrript.js"></script>
+  </body>
 </html>
